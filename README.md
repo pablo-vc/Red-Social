@@ -1,4 +1,4 @@
-# 🍽️ Eatinder – Descubrimiento gastronómico multiplataforma
+# 🍽️ LikeEat – Descubrimiento gastronómico multiplataforma
 
 Eatinder es una aplicación multiplataforma diseñada para facilitar el descubrimiento de restaurantes y locales gastronómicos de forma rápida, fácil, visual y personalizada. El proyecto conecta a usuarios con nuevas experiencias gastronómicas y ofrece a los negocios locales una herramienta digital eficaz para aumentar su visibilidad.
 
