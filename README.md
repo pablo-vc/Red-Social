@@ -7,7 +7,7 @@ La aplicación se basa en un sistema de tarjetas deslizables, que permite a los 
 
 ## Estado de la app
 
-El proyecto se encuentra principalmente en fase de investigación, a continuación se encuentran enlaces a las principales fuentes de información
+El proyecto se encuentra principalmente en fase de investigación, a continuación se encuentran enlaces a las principales fuentes de información y más abajo la cronología del proyecto.
 
 ### Moviles
  - [Curso 1](https://www.youtube.com/watch?v=UaR7GSNACsM)
