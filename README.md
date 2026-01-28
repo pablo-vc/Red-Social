@@ -19,6 +19,7 @@ El proyecto se encuentra principalmente en fase de investigación, a continuaci�
  - [Fragments](https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment?hl=en)
  - [ItemTouchHelper](https://developer.android.com/reference/androidx/recyclerview/widget/ItemTouchHelper)
  - [Deslizamiento de las tarjetas](https://developer.android.com/reference/androidx/recyclerview/widget/ItemTouchHelper.Callback#isItemViewSwipeEnabled())
+ - [View Model](https://developer.android.com/topic/libraries/architecture/viewmodel?hl=es-419#java)
 
 ### Escritorio
 
@@ -29,6 +30,8 @@ El proyecto se encuentra principalmente en fase de investigación, a continuaci�
 
 ## Cronoligía del proyecto
 
+Centrado por ahora en el desarrollo de la aplicación móvil.
+
 ### 12/01 - 18/01
 
 Grandes avances en la manera de navegación de la app móvil, conocimientos adquiridos sobre el uso de fragments y componentes como BottomNavigationView y FragmentContainerView.
@@ -37,4 +40,9 @@ Creación provisional y orientativa de los layout de inicio de sesión y registr
 ### 19/01 - 25/01
 
 Linea de investigación principal: gestión del sistema de tarjetas deslizantes mediante un recyclerView e ItemTouchHelper.
-Creación provisional del apartado de descubrimiento de la app, sin eventos enlazados todavia
+Creación provisional de la feed de la app, sin eventos enlazados todavia
+
+### 26/01 - 1/02
+
+Linea de investigación principal: gestión de datos con View Model.
+Avances en el diseño de la feed de la app móvil.
