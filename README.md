@@ -35,12 +35,14 @@ Centrado por ahora en el desarrollo de la aplicación móvil.
 ### 12/01 - 18/01
 
 Grandes avances en la manera de navegación de la app móvil, conocimientos adquiridos sobre el uso de fragments y componentes como BottomNavigationView y FragmentContainerView.
+
 Creación provisional y orientativa de los layout de inicio de sesión y registro.
 
 ### 19/01 - 25/01
 
 Linea de investigación principal: gestión del sistema de tarjetas deslizantes mediante un recyclerView e ItemTouchHelper.
-Creación provisional de la feed de la app, sin eventos enlazados todavia
+
+Creación provisional de la feed de la app, sin eventos enlazadosa los botones todavia.
 
 ### 26/01 - 1/02
 
