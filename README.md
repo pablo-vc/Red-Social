@@ -19,6 +19,7 @@ El proyecto se encuentra principalmente en fase de investigación, a continuaci�
  - [Fragments](https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment?hl=en)
  - [ItemTouchHelper](https://developer.android.com/reference/androidx/recyclerview/widget/ItemTouchHelper)
  - [Deslizamiento de las tarjetas](https://developer.android.com/reference/androidx/recyclerview/widget/ItemTouchHelper.Callback#isItemViewSwipeEnabled())
+ - [Componente de tarjetas deslizantes implementado (CardStackView)](https://github.com/yuyakaido/CardStackView)
  - [View Model](https://developer.android.com/topic/libraries/architecture/viewmodel?hl=es-419#java)
 
 ### Escritorio
@@ -47,4 +48,5 @@ Creación provisional de la feed de la app, sin eventos enlazadosa los botones t
 ### 26/01 - 1/02
 
 Linea de investigación principal: gestión de datos con View Model.
-Avances en el diseño de la feed de la app móvil.
+
+Avances en el diseño de la feed de la app móvil: implementación de evento swipe al pulsar los botones e identificación de "like", "dislike" o "refresh".
