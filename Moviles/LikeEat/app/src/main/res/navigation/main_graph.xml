@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/feedFragment"
-        android:name="LikeEat.ui.feed.FeedFragment"
+        android:name="com.example.LikeEat.ui.feed.FeedFragment"
         android:label="fragment_feed"
         tools:layout="@layout/fragment_feed" />
     <fragment
         android:id="@+id/listsFragment"
-        android:name="LikeEat.ui.lists.ListsFragment"
+        android:name="com.example.LikeEat.ui.lists.ListsFragment"
         android:label="fragment_lists"
         tools:layout="@layout/fragment_lists" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="LikeEat.ui.userprofile.ProfileFragment"
+        android:name="com.example.LikeEat.ui.userprofile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

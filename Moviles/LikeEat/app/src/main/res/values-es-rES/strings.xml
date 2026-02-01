@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LikeEat</string>
+    <string name="listFragmentTitle">Tus Listas</string>
+    <string name="listFragmentSubtitle">Platos que te han gustado</string>
+    <string name="allFavourites">"Todos "</string>
+</resources>

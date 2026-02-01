@@ -1,6 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">LikeEat</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">LikeEat</string>
     <string name="listFragmentTitle">Your Lists</string>
     <string name="listFragmentSubtitle">Dishes you\'ve liked</string>
     <string name="allFavourites">All Favourites</string>

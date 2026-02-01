@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.LikeEat.Restaurant;
-import com.example.LikeEat.adapters.RestauranteAdapter;
+import com.example.LikeEat.adapters.FeedAdapter;
 import com.example.LikeEat.databinding.FragmentFeedBinding;
 import com.yuyakaido.android.cardstackview.CardStackLayoutManager;
 import com.yuyakaido.android.cardstackview.CardStackListener;
@@ -29,8 +29,10 @@ public class FeedFragment extends Fragment {
 
     private FragmentFeedBinding binding;
     private FeedViewModel viewModel;
-    private RestauranteAdapter adapter;
+    private FeedAdapter adapter;
     private CardStackLayoutManager layoutManager;
+    OnCardActionListener cardListener;
+    CardStackListener cardStackListener;
 
     @Nullable
     @Override
@@ -40,7 +42,6 @@ public class FeedFragment extends Fragment {
             @Nullable Bundle savedInstanceState) {
 
         binding = FragmentFeedBinding.inflate(inflater, container, false);
-        setupCardStack();
         return binding.getRoot();
     }
 
@@ -53,10 +54,11 @@ public class FeedFragment extends Fragment {
         viewModel.getRestaurants().observe(getViewLifecycleOwner(), lista -> {
             adapter.setRestaurantes(lista);
         });
+        setUpListeners();
         setupCardStack();
 
-    }
 
+    }
 
     @Override
     public void onDestroyView() {
@@ -64,10 +66,24 @@ public class FeedFragment extends Fragment {
         binding = null;
     }
 
+    private void setUpListeners() {
+        cardListener = new OnCardActionListener() {
+            @Override
+            public void onLike() {
+                swipeRight();
+            }
 
-    private void setupCardStack() {
+            @Override
+            public void onDislike() {
+                swipeLeft();
+            }
 
-        layoutManager = new CardStackLayoutManager(requireContext(), new CardStackListener() {
+            @Override
+            public void onRefresh() {
+                binding.cardStackView.rewind();
+            }
+        };
+        cardStackListener = new CardStackListener() {
 
             @Override
             public void onCardDragging(Direction direction, float ratio) {
@@ -83,7 +99,7 @@ public class FeedFragment extends Fragment {
                     viewModel.addLiked(r);
                 } else if (direction == Direction.Left) {
                     // DISLIKE
-                    Toast.makeText(getContext(),"Dislike",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Dislike", Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -104,7 +120,14 @@ public class FeedFragment extends Fragment {
             @Override
             public void onCardDisappeared(View view, int position) {
             }
-        });
+        };
+    }
+
+
+
+    private void setupCardStack() {
+
+        layoutManager = new CardStackLayoutManager(requireContext(), cardStackListener);
 
         layoutManager.setStackFrom(StackFrom.Top);
         layoutManager.setVisibleCount(3);
@@ -115,27 +138,10 @@ public class FeedFragment extends Fragment {
         layoutManager.setDirections(Direction.HORIZONTAL);
         layoutManager.setSwipeableMethod(SwipeableMethod.AutomaticAndManual);
 
-
         binding.cardStackView.setLayoutManager(layoutManager);
-        adapter = new RestauranteAdapter(
-                new ArrayList<>(),
-                new OnCardActionListener() {
-                    @Override
-                    public void onLike() {
-                        swipeRight();
-                    }
 
-                    @Override
-                    public void onDislike() {
-                        swipeLeft();
-                    }
+        adapter = new FeedAdapter(new ArrayList<>(), cardListener);
 
-                    @Override
-                    public void onRefresh() {
-                        binding.cardStackView.rewind();
-                    }
-                }
-        );
         binding.cardStackView.setAdapter(adapter);
     }
 

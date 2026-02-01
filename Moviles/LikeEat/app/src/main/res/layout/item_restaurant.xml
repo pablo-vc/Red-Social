@@ -15,7 +15,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/restaurantImage"
+            android:id="@+id/ivRestaurantImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
@@ -33,9 +33,9 @@
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="8dp"
-            card_view:layout_constraintBottom_toBottomOf="@id/restaurantImage"
-            card_view:layout_constraintEnd_toEndOf="@id/restaurantImage"
-            card_view:layout_constraintStart_toStartOf="@id/restaurantImage">
+            card_view:layout_constraintBottom_toBottomOf="@id/ivRestaurantImage"
+            card_view:layout_constraintEnd_toEndOf="@id/ivRestaurantImage"
+            card_view:layout_constraintStart_toStartOf="@id/ivRestaurantImage">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btnDislike"
@@ -70,12 +70,13 @@
             android:id="@+id/cvRestaurantName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_margin="4dp"
             app:cardBackgroundColor="#76FFFFFF"
             app:cardCornerRadius="14dp"
             app:cardElevation="0dp"
             card_view:layout_constraintBottom_toTopOf="@id/categoriesLayout"
-            card_view:layout_constraintStart_toStartOf="@id/restaurantImage">
+            card_view:layout_constraintStart_toStartOf="@id/ivRestaurantImage">
 
             <TextView
                 android:id="@+id/tvRestaurantName"
@@ -93,6 +94,7 @@
             android:id="@+id/DistanceLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@id/categoriesLayout"
             app:layout_constraintStart_toEndOf="@id/cvRestaurantName"
@@ -106,7 +108,7 @@
                 app:cardCornerRadius="6dp"
                 app:cardElevation="0dp"
                 card_view:layout_constraintBottom_toTopOf="@id/categoriesLayout"
-                card_view:layout_constraintStart_toStartOf="@id/restaurantImage">
+                card_view:layout_constraintStart_toStartOf="@id/ivRestaurantImage">
 
                 <TextView
                     android:id="@+id/tvCity"
@@ -128,7 +130,7 @@
                 app:cardCornerRadius="6dp"
                 app:cardElevation="0dp"
                 card_view:layout_constraintBottom_toTopOf="@id/categoriesLayout"
-                card_view:layout_constraintStart_toStartOf="@id/restaurantImage">
+                card_view:layout_constraintStart_toStartOf="@id/ivRestaurantImage">
 
                 <TextView
                     android:id="@+id/tvDistance"
@@ -149,7 +151,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             card_view:layout_constraintBottom_toTopOf="@id/cvDishName"
-            card_view:layout_constraintStart_toStartOf="@id/restaurantImage">
+            card_view:layout_constraintStart_toStartOf="@id/ivRestaurantImage">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cvCategory1"
@@ -228,7 +230,7 @@
             app:cardCornerRadius="14dp"
             app:cardElevation="0dp"
             card_view:layout_constraintBottom_toTopOf="@id/cvDescription"
-            card_view:layout_constraintStart_toStartOf="@id/restaurantImage">
+            card_view:layout_constraintStart_toStartOf="@id/ivRestaurantImage">
 
             <TextView
                 android:id="@+id/tvDishName"
@@ -252,8 +254,8 @@
             app:cardCornerRadius="16dp"
             app:cardElevation="0dp"
             app:layout_constraintBottom_toTopOf="@id/buttonsLayout"
-            app:layout_constraintEnd_toEndOf="@id/restaurantImage"
-            app:layout_constraintStart_toStartOf="@id/restaurantImage">
+            app:layout_constraintEnd_toEndOf="@id/ivRestaurantImage"
+            app:layout_constraintStart_toStartOf="@id/ivRestaurantImage">
 
             <TextView
                 android:id="@+id/tvDescription"

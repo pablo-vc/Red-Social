@@ -4,6 +4,13 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
+    <style name="Theme.LikeEat" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+
+        <!-- Iconos claros u oscuros -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
 
     <style name="Theme.PruebaNavigationComponent" parent="Base.Theme.PruebaNavigationComponent" />
      

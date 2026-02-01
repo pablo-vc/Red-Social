@@ -13,21 +13,19 @@ import com.example.LikeEat.ui.feed.OnCardActionListener;
 
 import java.util.List;
 
-public class ListsAdapter extends RecyclerView.Adapter<ListsAdapter.ListsViewHolder> {
+public class ListsAdapter2 extends RecyclerView.Adapter<ListsAdapter2.ListsViewHolder> {
     private List<Restaurant> likedRestaurants;
     private OnCardActionListener Cardlistener;
 
 
-    public ListsAdapter(List<Restaurant> likedRestaurants, OnCardActionListener CardListener) {
+    public ListsAdapter2(List<Restaurant> likedRestaurants, OnCardActionListener CardListener) {
         this.likedRestaurants = likedRestaurants;
         this.Cardlistener = CardListener;
     }
-
     public void setLikedRestaurants(List<Restaurant> likedRestaurants) {
         this.likedRestaurants = likedRestaurants;
         notifyDataSetChanged();
     }
-
     public Restaurant getItem(int position) {
         return likedRestaurants.get(position);
     }
@@ -36,7 +34,7 @@ public class ListsAdapter extends RecyclerView.Adapter<ListsAdapter.ListsViewHol
     @Override
     public ListsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_lists1, parent, false);
+                .inflate(R.layout.item_lists2, parent, false);
 
         return new ListsViewHolder(view);
     }
@@ -48,7 +46,7 @@ public class ListsAdapter extends RecyclerView.Adapter<ListsAdapter.ListsViewHol
 
     @Override
     public int getItemCount() {
-        return likedRestaurants.size();
+        return 0;
     }
 
     static class ListsViewHolder extends RecyclerView.ViewHolder {

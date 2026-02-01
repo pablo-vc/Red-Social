@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 380px;
+  /* width: 100%; */
+  /* max-width: 380px; */
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  color: #ff7a18;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-buttons label {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  background: #f0f0f0;
+  color: #555;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* BOTÓN ACTIVO */
+#login:checked~.tab-buttons label[for="login"],
+#register:checked~.tab-buttons label[for="register"] {
+  background: #ff7a18;
+  color: #fff;
+}
+
+.form {
+  display: none;
+  flex-direction: column;
+}
+
+/* MOSTRAR SEGÚN CHECK */
+#login:checked~.forms .login-form {
+  display: flex;
+}
+
+#register:checked~.forms .register-form {
+  display: flex;
+}
+
+.form input {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #ff7a18;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #ff7a18;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e56a10;
+}
