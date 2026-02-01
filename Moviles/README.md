@@ -38,6 +38,8 @@ Linea de investigación principal: gestión de datos con View Model.
 
 Avances en el diseño de la feed de la app móvil: implementación de evento swipe al pulsar los botones e identificación de "like", "dislike" o "refresh".
 
+Implementación de ViewModel.
+
 Diseño de la activity de inicio de sesión y registro.
 
 
