@@ -1,4 +1,4 @@
-# 🍽️ LikeEat – Web
+# 🍽️ LikeEat – Escritorio
 
 Apartado en el que se irán exponiendo los avances semanales en el desarrollo de la aplicación de escritorio.
 
