@@ -2,6 +2,7 @@
 
 Apartado en el que se irán exponiendo los avances semanales en el desarrollo de la aplicación web.
 
+## Cronoligía del proyecto
 
 ### 26/01 - 01/02
 
