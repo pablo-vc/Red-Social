@@ -10,3 +10,10 @@ La aplicación se basa en un sistema de tarjetas deslizables, que permite a los 
 En cada subproyecto se encuentra un readme informativo que se irá actualizando conforme avance el proyecto, esto permite ver más claramente los avances en cada apartado y disponer de la información de cada uno de ellos en conjunto y bien diferenciada.
 
 
+## Enlaces a los subproyectos
+
+[Móvil](./Moviles)
+
+[Web](./Web)
+
+[Escritorio](./Escritorio)
