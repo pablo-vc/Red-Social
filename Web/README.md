@@ -5,6 +5,7 @@ Apartado en el que se irán exponiendo los avances semanales en el desarrollo de
 ## Investigación
 
 - [Curso Laravel](https://www.youtube.com/watch?v=aljDqJCYkIc&list=PLDllzmccetSM50U0Y9fTOWHvSzAZ_W6Il&index=2)
+- [Curso HTML y CSS](https://www.youtube.com/watch?v=id11DxHyQ1k&list=PLDllzmccetSPC_dJxvoyqF5xFMAHklHIl)  (Por encima)
 
 ## Cronoligía del proyecto
 
