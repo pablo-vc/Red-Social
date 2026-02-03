@@ -1,6 +1,6 @@
 #  🍽️ LikeEat – Móvil
 
-Apartado en el que se irán exponiendo los avances semanales en el desarrollo de la aplicación web.
+Apartado en el que se irán exponiendo los avances semanales en el desarrollo de la aplicación móvil.
 
 ## Investigación
 
