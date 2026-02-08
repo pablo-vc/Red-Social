@@ -22,7 +22,7 @@ Apartado en el que se irán exponiendo los avances semanales en el desarrollo de
 
 ### 12/01 - 18/01
 
-Grandes avances en la manera de navegación de la app móvil, conocimientos adquiridos sobre el uso de fragments y componentes como BottomNavigationView y FragmentContainerView.
+Grandes avances en la navegación dentro de la app móvil, conocimientos adquiridos sobre el uso de fragments y componentes como BottomNavigationView y FragmentContainerView.
 
 Creación provisional y orientativa de los layout de inicio de sesión y registro.
 
@@ -41,6 +41,8 @@ Avances en el diseño de la feed de la app móvil: implementación de evento swi
 Implementación de ViewModel.
 
 Diseño de la activity de inicio de sesión y registro.
+
+Cambio de RecyclerView a CardStackView para la gestión de las tarjetas.
 
 
 ## Video Demo 
