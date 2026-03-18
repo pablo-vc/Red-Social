@@ -30,7 +30,7 @@ Creación provisional y orientativa de los layout de inicio de sesión y registr
 
 Linea de investigación principal: gestión del sistema de tarjetas deslizantes mediante un recyclerView e ItemTouchHelper.
 
-Creación provisional de la feed de la app, sin eventos enlazadosa los botones todavia.
+Creación provisional del feed de la app, sin eventos enlazados a los botones todavia.
 
 ### 26/01 - 1/02
 
