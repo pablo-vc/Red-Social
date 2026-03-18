@@ -6,7 +6,7 @@ La aplicación se basa en un sistema de tarjetas deslizables, que permite a los 
 
 ## Importante
 
-El desarrollo se ha pausado debido a un cambio en en el enfoque del proyecto, en este repositorio y sus subcarpetas se mantendrá lo que hay con los avances alcanzados hasta la fecha (02/02), el desarrollo continuará una vez finalizado el nuevo proyecto.
+El desarrollo se ha parado debido a un cambio en en el enfoque del proyecto, en este repositorio y sus subcarpetas se mantendrá lo que hay con los avances alcanzados hasta la fecha (02/02).
 
 Los avances en el nuevo proyecto se irán subiendo en en el siguiente repositorio: [Nuevo Proyecto](https://github.com/pablo-vc/Y)
 
